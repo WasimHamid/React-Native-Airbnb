@@ -33,12 +33,12 @@ class Home extends React.Component {
           }}
         >
           <Text style={{ fontSize: 10, color: "#b63838" }}>
-            PRIVATE ROOM - 2 BEDS
+            {this.props.type}
           </Text>
           <Text style={{ fontSize: 12, fontWeight: "bold" }}>
-            The Cozy Palace
+            {this.props.name}
           </Text>
-          <Text style={{ fontSize: 10 }}>{this.props.price}</Text>
+          <Text style={{ fontSize: 10 }}>£{this.props.price}</Text>
           <StarRating
             disable={true}
             maxStars={5}
